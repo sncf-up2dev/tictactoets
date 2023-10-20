@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Tic-tac-toe</title>
+        <script type="module">
+            import { Game } from './src/Game.js'
+            const gameBoard = document.getElementById('game-board');
+            const game = new Game(gameBoard, 3);
+            game.generate();
+        </script>
+    </head>
+    <body>
+        <div id="game-board">
+        </div>
+    </body>
+</html>
